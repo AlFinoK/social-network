@@ -2,7 +2,6 @@ const MainPage = () => {
   return (
     <>
       <div>MainPage</div>
-      <button>ffff</button>
     </>
   )
 }

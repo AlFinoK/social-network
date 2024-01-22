@@ -1,0 +1,10 @@
+.navbar {
+    max-width: 350px;
+    padding: 1.4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    background-color: var(--inverted-bg-color);
+}

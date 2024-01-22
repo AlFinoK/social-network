@@ -4,9 +4,14 @@
 @import './vars/global.scss';
 
 .app {
-    font: var(--font-m);
-    background: var(--bg-color);
-    color: var(--primary-color);
+  font: var(--font-m);
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+}
 
-    min-height: 100vh;
+.fallback {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20%;
 }

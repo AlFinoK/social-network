@@ -1,0 +1,18 @@
+.appLink {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    transition: color 0.2s ease;
+    &:hover {
+        color: rgb(174, 174, 4);
+        border-bottom: 1px solid rgb(174, 174, 4);
+        margin-bottom: -1px;
+    }
+}
+
+.primary {
+    color: var(--primary-color);
+}
+
+.inverted {
+    color: var(--inverted-primary-color);
+}
