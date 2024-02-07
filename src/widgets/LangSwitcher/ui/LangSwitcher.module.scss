@@ -1,21 +1,18 @@
-.ThemeSwitcher {
-}
-
-.light,
-.dark {
+//
+.button svg {
     width: 3rem;
     height: 3rem;
 }
 
-.light {
+.dark svg {
     path {
         fill: var(--inverted-bg-color);
         stroke: white;
     }
 }
-.dark {
+.light svg {
     path {
-        fill: var(--primary-color);
+        fill: var(--bg-color);
         stroke: var(--primary-color);
     }
 }

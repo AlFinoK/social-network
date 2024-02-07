@@ -1,6 +1,6 @@
 .Sidebar {
     height: calc(100vh - var(--navbar-height));
-    width: 15rem;
+    width: 20rem;
     background-color: var(--inverted-bg-color);
     position: relative;
     transition: width 0.3s ease;
@@ -18,4 +18,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.chevron {
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 3%;
+    top: 40%;
+    transition: transform 0.3s;
+    svg {
+        path {
+            stroke: var(--primary-color);
+        }
+    }
+}
+
+.collapsed .chevron {
+    transform: rotate(180deg);
 }
