@@ -2,9 +2,19 @@
     height: calc(var(--navbar-height));
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     font-size: 1.4rem;
     color: var(--primary-color);
     background-color: var(--inverted-bg-color);
     gap: 2rem;
+    a:last-child {
+        display: inline-block;
+        margin-right: 3rem;
+    }
+}
+
+.home,
+.about {
+    width: 3rem;
+    height: 3rem;
 }
