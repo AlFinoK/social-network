@@ -9,8 +9,8 @@
 
 .light {
     path {
-        fill: var(--inverted-bg-color);
-        stroke: white;
+        fill: var(--primary-color);
+        stroke: var(--primary-color);
     }
 }
 .dark {
