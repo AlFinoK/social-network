@@ -6,13 +6,13 @@
 
 .dark svg {
     path {
-        fill: var(--inverted-bg-color);
+        fill: transparent;
         stroke: white;
     }
 }
 .light svg {
     path {
-        fill: var(--bg-color);
+        fill: transparent;
         stroke: var(--primary-color);
     }
 }

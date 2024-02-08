@@ -1,9 +1,10 @@
 .Sidebar {
     height: calc(100vh - var(--navbar-height));
     width: 20rem;
-    background-color: var(--inverted-bg-color);
+    background: var(--bg-sider);
     position: relative;
     transition: width 0.3s ease;
+    box-shadow: var(--box-shadow);
 }
 
 .collapsed {
@@ -27,6 +28,7 @@
     right: 3%;
     top: 40%;
     transition: transform 0.3s;
+    transform: rotate(180deg);
     svg {
         path {
             stroke: var(--primary-color);
@@ -35,5 +37,6 @@
 }
 
 .collapsed .chevron {
-    transform: rotate(180deg);
+    right: 20%;
+    transform: rotate(0deg);
 }

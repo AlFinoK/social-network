@@ -1,9 +1,9 @@
 import { useTranslation } from 'react-i18next'
-import s from './LangSwitcher.module.scss'
 import { classNames } from 'shared/lib/classNames'
 import { Button, ThemeButton } from 'shared/ui/Button/Button'
 import { Theme, useTheme } from 'app/providers/ThemeProvider'
 import ChangeLanguage from 'shared/assets/icons/change-language.svg'
+import s from './LangSwitcher.module.scss'
 
 interface LangSwitcherProps {
     className?: string
@@ -11,9 +11,9 @@ interface LangSwitcherProps {
 
 export const LangSwitcher = ({ className }: LangSwitcherProps) => {
     const { theme } = useTheme()
-    const { t, i18n } = useTranslation()
+    const { i18n } = useTranslation()
 
-    function toggleLanguage() {
+    const toggleLanguage = () => {
         i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')
     }
 
