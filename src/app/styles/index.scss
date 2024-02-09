@@ -1,7 +1,7 @@
-@import './reset.scss';
-@import './themes/dark.scss';
-@import './themes/light.scss';
-@import './vars/global.scss';
+@import './reset';
+@import './themes/dark';
+@import './themes/light';
+@import './vars/global';
 
 .app {
     font: var(--font-m);
@@ -16,11 +16,6 @@
     padding: 0 15px;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-}
-
 .leftSide {
     max-width: 30rem;
 }
@@ -31,8 +26,6 @@
 }
 
 .wrapper {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
 }
