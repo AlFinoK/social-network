@@ -18,6 +18,7 @@
 .links {
     display: flex;
     gap: 2rem;
+
     a:last-child {
         display: inline-block;
         margin-right: 3rem;
@@ -33,16 +34,18 @@
         width: 4rem;
         height: 4rem;
     }
+
     span {
         font-size: 2.5rem;
         background: #b7deed;
-        background: linear-gradient(
-            to right,
-            #4bbce8 0%,
-            #71ceef 25%,
-            #21b4e2 75%,
-            #39bff4 100%
-        );
+        background:
+            linear-gradient(
+                to right,
+                #4bbce8 0%,
+                #71ceef 25%,
+                #21b4e2 75%,
+                #39bff4 100%
+            );
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
