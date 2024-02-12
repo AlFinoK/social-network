@@ -11,7 +11,8 @@
         "lint:ts": "eslint \"**/*.{ts,tsx}\"",
         "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
         "lint:scss": "npx stylelint \"**/*.scss\"",
-        "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix"
+        "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
+        "unit": "jest --config ./config/jest/jest.config.ts"
     },
     "repository": {
         "type": "git",
@@ -82,6 +83,7 @@
         "style-loader": "^3.3.1",
         "stylelint": "^14.16.1",
         "stylelint-config-standard-scss": "^3.0.0",
+        "stylelint-scss": "^6.1.0",
         "ts-loader": "^9.2.6",
         "ts-node": "^10.5.0",
         "typescript": "^4.9.5",

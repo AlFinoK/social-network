@@ -4,7 +4,7 @@ import { classNames } from 'shared/lib/classNames'
 import { Navbar } from 'widgets/Navbar'
 import { Sidebar } from 'widgets/Sidebar'
 import { Suspense } from 'react'
-import { Loader } from 'shared/ui/Loader/Loader'
+import { PageLoader } from 'widgets/PageLoader'
 import { AppRouter } from './providers/router'
 
 export const App = () => {
@@ -12,15 +12,11 @@ export const App = () => {
 
     return (
         <div className={classNames('app', {}, [theme])}>
-            <Suspense fallback={<Loader />}>
+            <Suspense fallback={<PageLoader />}>
                 <Navbar />
-                <div className="wrapper">
-                    <div className="leftSide">
-                        <Sidebar />
-                    </div>
-                    <div className="content">
-                        <AppRouter />
-                    </div>
+                <div className="content">
+                    <Sidebar />
+                    <AppRouter />
                 </div>
             </Suspense>
         </div>
