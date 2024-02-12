@@ -16,16 +16,12 @@
     padding: 0 15px;
 }
 
-.leftSide {
-    max-width: 30rem;
-}
-
 .content {
-    padding: 1rem;
-    width: 100%;
-}
-
-.wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+.page-wrapper {
+    width: 100%;
+    padding: 1rem;
 }
