@@ -2,9 +2,51 @@
     height: calc(var(--navbar-height));
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 1.4rem;
     color: var(--primary-color);
-    background-color: var(--inverted-bg-color);
+    background: var(--bg-navbar);
+    box-shadow: var(--box-shadow);
+}
+
+.home,
+.about {
+    width: 3rem;
+    height: 3rem;
+}
+
+.links {
+    display: flex;
     gap: 2rem;
+
+    a:last-child {
+        display: inline-block;
+        margin-right: 3rem;
+    }
+}
+
+.logo {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    span {
+        font-size: 2.5rem;
+        background: #b7deed;
+        background:
+            linear-gradient(
+                to right,
+                #4bbce8 0%,
+                #71ceef 25%,
+                #21b4e2 75%,
+                #39bff4 100%
+            );
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }

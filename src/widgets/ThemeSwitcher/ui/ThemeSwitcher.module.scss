@@ -1,5 +1,5 @@
-.ThemeSwitcher {
-}
+// .ThemeSwitcher {
+// }
 
 .light,
 .dark {
@@ -9,13 +9,14 @@
 
 .light {
     path {
-        fill: yellow;
-        stroke: yellow;
+        fill: var(--primary-color);
+        stroke: var(--primary-color);
     }
 }
+
 .dark {
     path {
-        fill: rgb(15, 11, 125);
-        stroke: blue;
+        fill: var(--primary-color);
+        stroke: var(--primary-color);
     }
 }

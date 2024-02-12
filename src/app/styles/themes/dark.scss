@@ -1,10 +1,9 @@
 .app.dark {
-    --bg-color: #2b2b2b;
-    --inverted-bg-color: #34495e;
-
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-
-    --inverted-primary-color: #ffffff;
-    --inverted-secondary-color: #ecf0f1;
+    --bg-color: linear-gradient(62deg, #787878 0%, #4e4e4e 100%);
+    --inverted-bg-color: #04213c;
+    --primary-color: #fff;
+    --primary-secondary-color: #ecf0f1;
+    --inverted-color: red;
+    --inverted-secondary-color: red;
+    --box-shadow: 0 5px 20px rgb(60 60 60 / 70%);
 }

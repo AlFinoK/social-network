@@ -1,19 +1,13 @@
-@import './reset.scss';
-@import './themes/dark.scss';
-@import './themes/light.scss';
-@import './vars/global.scss';
+@import './reset';
+@import './themes/dark';
+@import './themes/light';
+@import './vars/global';
 
 .app {
     font: var(--font-m);
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     color: var(--primary-color);
     min-height: 100vh;
-}
-
-.fallback {
-    text-align: center;
-    font-size: 3rem;
-    margin-top: 20%;
 }
 
 .container {
@@ -22,19 +16,16 @@
     padding: 0 15px;
 }
 
-.wrapper {
-    display: flex;
-}
 .leftSide {
     max-width: 30rem;
 }
+
 .content {
     padding: 1rem;
     width: 100%;
 }
+
 .wrapper {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-    }
+    display: flex;
+    justify-content: space-between;
 }

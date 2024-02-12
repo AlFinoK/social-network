@@ -1,10 +1,9 @@
 .app.light {
-    --bg-color: #ffffff;
+    --bg-color: linear-gradient(58deg, #fff 0%, #d6fffd 100%);
     --inverted-bg-color: #f4f4f4;
-
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
-
-    --inverted-primary-color: #ffffff;
+    --inverted-primary-color: #fff;
     --inverted-secondary-color: #ecf0f1;
+    --box-shadow: 0 5px 20px rgb(90 90 90 / 10%);
 }
