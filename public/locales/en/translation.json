@@ -2,5 +2,7 @@
     "Перевод": "Translate",
     "Главная": "Main",
     "О сайте": "About",
-    "Страница не найдена": "Page wasn't found"
+    "Страница не найдена": "Page wasn't found",
+    "Произошла ошибка": "An error occurred",
+    "Перезагрузить страницу": "Reload the page"
 }
