@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/classNames'
+import { classNames } from 'shared/lib/classNames/classNames'
 import { useTranslation } from 'react-i18next'
 import Home from 'shared/assets/icons/home.svg'
 import About from 'shared/assets/icons/about.svg'
