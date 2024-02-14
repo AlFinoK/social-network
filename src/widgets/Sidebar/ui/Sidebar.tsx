@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { classNames } from 'shared/lib/classNames'
+import { classNames } from 'shared/lib/classNames/classNames'
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher'
 import { LangSwitcher } from 'widgets/LangSwitcher'
 import Chevron from 'shared/assets/icons/chevron.svg'
@@ -15,11 +15,13 @@ export const Sidebar = ({ className }: SidebarProps) => {
 
     return (
         <div
+            data-testid="sidebar"
             className={classNames(s.Sidebar, { [s.collapsed]: collapsed }, [
                 className,
             ])}
         >
             <Button
+                data-testid="sidebar-toggle"
                 className={`${s.chevron} ${collapsed ? s.collapsed : ''}`}
                 theme={ThemeButton.CLEAR}
                 onClick={() => setCollapsed((prev) => !prev)}

@@ -1,7 +1,7 @@
-import { Component, ErrorInfo, ReactNode, Suspense } from 'react'
-import { withTranslation } from 'react-i18next'
+import {
+    Component, ErrorInfo, ReactNode, Suspense,
+} from 'react'
 import { PageError } from 'widgets/PageError'
-import { PageLoader } from 'widgets/PageLoader'
 
 interface ErrorBoundaryProps {
     children: ReactNode
