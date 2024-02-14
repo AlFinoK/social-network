@@ -21,7 +21,6 @@ export const Sidebar = ({ className }: SidebarProps) => {
             ])}
         >
             <Button
-                // eslint-disable-next-line i18next/no-literal-string
                 data-testid="sidebar-toggle"
                 className={`${s.chevron} ${collapsed ? s.collapsed : ''}`}
                 theme={ThemeButton.CLEAR}

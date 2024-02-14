@@ -4,6 +4,7 @@ import s from './Button.module.scss';
 
 export enum ThemeButton {
   CLEAR = 'clear',
+  OUTLINE = 'outline'
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -16,6 +17,7 @@ export const Button: FC<ButtonProps> = (props) => {
         className, children, theme, ...otherProps
     }: ButtonProps = props;
     return (
+        // eslint-disable-next-line react/button-has-type
         <button
             className={classNames(s.Button, { [s[theme]]: true }, [className])}
             {...otherProps}

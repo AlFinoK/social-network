@@ -1,4 +1,4 @@
-import { fireEvent, getByTestId, screen } from '@testing-library/react'
+import { fireEvent, screen } from '@testing-library/react'
 // eslint-disable-next-line max-len
 import { renderWithTranslation } from 'shared/lib/tests/renderWithTranslation/renderWithTranslation'
 import { Sidebar } from './Sidebar'
