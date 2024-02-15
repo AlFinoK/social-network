@@ -1,14 +1,14 @@
 on:
  push: 
-  branches: [ master ]
+  branches: [ main ]
  pull_request: 
-  branches: [ master ]
+  branches: [ main ]
 jobs:
  pipeline:
   runs-on: ubuntu-latest
   strategy: 
    matrix: 
-    node-version: [ 17.x ] 
+    node-version: [ 18.x ] 
   steps:
    - uses: actions/checkout@v2
    - name: Staring Node.js ${{ matrix.node-version }}
