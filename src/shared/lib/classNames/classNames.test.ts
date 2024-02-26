@@ -1,4 +1,4 @@
-import { classNames } from './classNames'
+import { classNames } from '.'
 
 describe('classNames', () => {
     test('only with one param', () => {

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { classNames } from 'shared/lib/classNames/classNames'
+import { classNames } from 'shared/lib/classNames'
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher'
 import { LangSwitcher } from 'widgets/LangSwitcher'
 import Chevron from 'shared/assets/icons/chevron.svg'

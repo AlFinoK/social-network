@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next'
-import { classNames } from 'shared/lib/classNames/classNames'
+import { classNames } from 'shared/lib/classNames'
 import { Button, ButtonTheme } from 'shared/ui/Button/Button'
 import { Theme, useTheme } from 'app/providers/ThemeProvider'
 import ChangeLanguage from 'shared/assets/icons/change-language.svg'
