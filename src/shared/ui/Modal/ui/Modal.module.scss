@@ -19,7 +19,8 @@
 }
 
 .content {
-    background: var(--inverted-bg-color);
+    // background: var(--inverted-bg-color);
+    background: var(--bg-color); // надо будет поменять
     padding: 2rem;
     border-radius: 15px;
     width: 50vw;

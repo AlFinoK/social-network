@@ -1,11 +1,10 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
-
+import { Theme } from 'app/providers/ThemeProvider'
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator'
 import { Modal } from './Modal'
-import { Theme } from '../../../app/providers/ThemeProvider'
 
 export default {
-    title: 'widgets/Modal',
+    title: 'shared/Modal',
     component: Modal,
     argTypes: {
         backgroundColor: { control: 'color' },
@@ -15,9 +14,19 @@ export default {
 const Template: ComponentStory<typeof Modal> = (args) => <Modal {...args} />
 
 export const Light = Template.bind({})
-Light.args = {}
+Light.args = {
+    children: 'lorem ipsum dolor...',
+    isOpen: true,
+    theme: Theme.LIGHT,
+}
+
+Light.decorators = [ThemeDecorator(Theme.LIGHT)]
 
 export const Dark = Template.bind({})
-Dark.args = {}
+Dark.args = {
+    children: 'lorem ipsum dolor...',
+    isOpen: true,
+    theme: Theme.DARK,
+}
 
 Dark.decorators = [ThemeDecorator(Theme.DARK)]
