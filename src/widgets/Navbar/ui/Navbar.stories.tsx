@@ -1,7 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator'
-import { RouterDecorator } from 'shared/config/storybook/RouterDecorator'
 import { Theme } from 'app/providers/ThemeProvider'
 import { Navbar } from './Navbar'
 

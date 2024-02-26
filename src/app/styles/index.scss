@@ -3,10 +3,13 @@
 @import './themes/light';
 @import './vars/global';
 
-.app {
+body {
     font: var(--font-m);
-    background: var(--bg-color);
     color: var(--primary-color);
+}
+
+.app {
+    background: var(--bg-color);
     min-height: 100vh;
 }
 
@@ -24,4 +27,6 @@
 .page-wrapper {
     width: 100%;
     padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
