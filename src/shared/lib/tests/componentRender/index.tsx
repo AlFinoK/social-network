@@ -9,7 +9,9 @@ export interface componentRenderOptions {
 }
 
 export function componentRender(
-    component: ReactNode, options: componentRenderOptions = {}) {
+    component: ReactNode,
+    options: componentRenderOptions = {},
+) {
     const { route = '/' } = options
     return render(
         <MemoryRouter initialEntries={[route]}>
