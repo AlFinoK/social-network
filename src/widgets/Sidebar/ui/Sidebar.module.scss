@@ -86,6 +86,7 @@
     transition: transform 0.3s;
     transform: rotate(180deg);
 
+    /* stylelint-disable-next-line no-descending-specificity */
     svg {
         path {
             stroke: var(--primary-color);

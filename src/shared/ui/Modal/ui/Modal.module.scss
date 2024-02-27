@@ -27,6 +27,21 @@
     min-height: 20vh;
     transition: 0.3s transform;
     transform: scale(0.5);
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: -12%;
+    right: -7%;
+    cursor: pointer;
+
+    svg path {
+        fill: var(--inverted-bg-color);
+        stroke: var(--primary-color);
+    }
 }
 
 .opened {
@@ -43,6 +58,3 @@
         transform: scale(0.2);
     }
 }
-
-// .close {
-// }

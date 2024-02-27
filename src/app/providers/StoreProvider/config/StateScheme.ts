@@ -2,4 +2,8 @@
 //     value: number
 // }
 
-export interface StateScheme {}
+import { CounterScheme } from 'entities/Counter'
+
+export interface StateScheme {
+    counter: CounterScheme
+}
