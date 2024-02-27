@@ -6,7 +6,7 @@ import {
 } from '../lib/ThemeContext'
 
 interface ThemeProviderProps {
-    initialTheme?: Theme
+     initialTheme?: Theme
 }
 
 // eslint-disable-next-line operator-linebreak

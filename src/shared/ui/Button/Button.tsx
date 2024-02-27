@@ -18,7 +18,8 @@ export const Button: FC<ButtonProps> = (props) => {
         // eslint-disable-next-line react/button-has-type
         <button
             className={classNames(s.Button, { [s[theme]]: true }, [className])}
-            {...otherProps}>
+            {...otherProps}
+        >
             {children}
         </button>
     )
