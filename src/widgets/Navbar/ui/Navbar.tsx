@@ -35,7 +35,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                     {t('Зарегистрироваться')}
                 </Button>
                 <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-                    lorem ipsum dolor...
+                    <span>lorem ipsum dolor...</span>
                 </Modal>
             </div>
         </div>
