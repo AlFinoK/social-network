@@ -8,6 +8,7 @@ import {
     useState,
 } from 'react'
 import { Portal } from 'shared/Portal'
+import { useTheme } from 'app/providers/ThemeProvider'
 import s from './Modal.module.scss'
 
 const ANIMATION_DELAY = 150
@@ -23,6 +24,7 @@ export const Modal = (props: ModalProps) => {
     const { className, children, isOpen, onClose } = props
     const [isClosing, setIsClosing] = useState(false)
     const timerRef = useRef<ReturnType<typeof setTimeout>>()
+    const { theme } = useTheme()
 
     const mods: Record<string, boolean> = {
         [s.opened]: isOpen,
@@ -65,7 +67,7 @@ export const Modal = (props: ModalProps) => {
 
     return (
         <Portal>
-            <div className={classNames(s.Modal, mods, [className])}>
+            <div className={classNames(s.Modal, mods, [className, theme])}>
                 <div onClick={closeHandler} className={s.overlay}>
                     <div onClick={onContentClick} className={s.content}>
                         {children}
@@ -75,8 +77,7 @@ export const Modal = (props: ModalProps) => {
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 strokeWidth="1.5"
-                                stroke="currentColor"
-                            >
+                                stroke="currentColor">
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
