@@ -1,3 +1,15 @@
+.button {
+    path {
+        transition: all 0.3s;
+    }
+}
+
+.button:hover {
+    path {
+        stroke: var(--hover-color);
+    }
+}
+
 .button svg {
     width: 3rem;
     height: 3rem;

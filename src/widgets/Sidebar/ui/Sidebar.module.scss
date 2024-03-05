@@ -89,7 +89,14 @@
     /* stylelint-disable-next-line no-descending-specificity */
     svg {
         path {
+            transition: all 0.3s;
             stroke: var(--primary-color);
+        }
+    }
+
+    &:hover {
+        path {
+            stroke: var(--hover-color);
         }
     }
 }

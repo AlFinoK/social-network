@@ -1,14 +1,14 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+// import { classNames } from 'shared/lib/classNames'
+import { useTranslation } from 'react-i18next'
+
+// interface AboutPageProps {
+//     className?: string
+// }
 
 const AboutPage = () => {
-    const { t } = useTranslation('about');
+    const { t } = useTranslation()
 
-    return (
-        <div>
-            {t('О сайте')}
-        </div>
-    );
-};
+    return <div style={{ color: 'var(--primary-color)' }}>{t('О сайте')}</div>
+}
 
-export default AboutPage;
+export default AboutPage

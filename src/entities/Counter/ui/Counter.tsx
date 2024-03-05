@@ -10,8 +10,11 @@ export const Counter = () => {
     const increment = () => {
         dispatch(counterActions.increment())
     }
+
     const decrement = () => {
-        dispatch(counterActions.decrement())
+        if (counterValue > 0) {
+            dispatch(counterActions.decrement())
+        }
     }
 
     return (
@@ -22,15 +25,13 @@ export const Counter = () => {
             <Button
                 data-testid="increment-btn"
                 onClick={increment}
-                theme={ButtonTheme.OUTLINE}
-            >
+                theme={ButtonTheme.OUTLINE}>
                 increment
             </Button>
             <Button
                 data-testid="decrement-btn"
                 onClick={decrement}
-                theme={ButtonTheme.OUTLINE}
-            >
+                theme={ButtonTheme.OUTLINE}>
                 decrement
             </Button>
         </>

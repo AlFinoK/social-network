@@ -1,5 +1,15 @@
-// .ThemeSwitcher {
-// }
+.ThemeSwitcher {
+    path {
+        transition: all 0.3s;
+    }
+}
+
+.ThemeSwitcher:hover {
+    path {
+        fill: var(--hover-color);
+        stroke: var(--hover-color);
+    }
+}
 
 .light,
 .dark {
