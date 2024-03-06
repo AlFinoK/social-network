@@ -30,12 +30,12 @@ export const Navbar = ({ className }: NavbarProps) => {
                 <Button
                     className={s.loginBtn}
                     theme={ButtonTheme.OUTLINE}
-                    // eslint-disable-next-line react/jsx-closing-bracket-location
-                    onClick={onToggleModal}>
+                    onClick={onToggleModal}
+                >
                     {t('Зарегистрироваться')}
                 </Button>
                 <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-                    <span>lorem ipsum dolor...</span>
+                    lorem ipsum dolor...
                 </Modal>
             </div>
         </div>

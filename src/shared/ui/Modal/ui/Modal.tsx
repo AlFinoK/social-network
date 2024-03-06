@@ -67,7 +67,10 @@ export const Modal = (props: ModalProps) => {
 
     return (
         <Portal>
-            <div className={classNames(s.Modal, mods, [className, theme])}>
+            <div
+                data-testid="Modal"
+                className={classNames(s.Modal, mods, [className, theme])}
+            >
                 <div onClick={closeHandler} className={s.overlay}>
                     <div onClick={onContentClick} className={s.content}>
                         {children}
@@ -77,7 +80,8 @@ export const Modal = (props: ModalProps) => {
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 strokeWidth="1.5"
-                                stroke="currentColor">
+                                stroke="currentColor"
+                            >
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
