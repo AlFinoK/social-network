@@ -18,11 +18,15 @@ interface ModalProps {
     children?: ReactNode
     isOpen?: boolean
     onClose?: () => void
+    lazy?: boolean
 }
 
 export const Modal = (props: ModalProps) => {
-    const { className, children, isOpen, onClose } = props
+    const { className, children, isOpen, onClose, lazy } = props
     const [isClosing, setIsClosing] = useState(false)
+    // ^ состояние для работы с закрытием
+    const [isMounted, setIsMounted] = useState(false)
+    // ^ состояние для работы с монтированием
     const timerRef = useRef<ReturnType<typeof setTimeout>>()
     const { theme } = useTheme()
 
@@ -40,6 +44,7 @@ export const Modal = (props: ModalProps) => {
             }, ANIMATION_DELAY)
         }
     }, [onClose])
+    // ^ анимационное закрытие
 
     const onKeyDown = useCallback(
         (e: KeyboardEvent) => {
@@ -49,6 +54,13 @@ export const Modal = (props: ModalProps) => {
         },
         [closeHandler],
     )
+    // ^ функция для закрытия модалки по клавише esc
+
+    useEffect(() => {
+        if (isOpen) {
+            setIsMounted(true)
+        }
+    }, [isOpen])
 
     useEffect(() => {
         if (isOpen) {
@@ -63,6 +75,10 @@ export const Modal = (props: ModalProps) => {
 
     const onContentClick = (e: MouseEvent) => {
         e.stopPropagation()
+    }
+
+    if (lazy && !isMounted) {
+        return null
     }
 
     return (

@@ -9,15 +9,44 @@
 
     &::placeholder {
         color: var(--primary-color);
+        font-size: 1.2rem;
+        opacity: 0.5;
     }
+}
+
+.inputBox {
+    display: flex;
+    position: relative;
 }
 
 .primary {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
     background: none;
-    padding: 1rem 2.5rem;
+    padding: 1.2rem 3rem;
     border-radius: 5px;
     min-width: 20rem;
+    font-size: 1.5rem;
     width: 100%;
+}
+
+.clear {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+
+    svg {
+        width: 24px;
+        height: 24px;
+
+        path {
+            transition: all 0.2s;
+        }
+    }
+
+    &:hover {
+        svg path {
+            stroke: var(--hover-color);
+        }
+    }
 }
