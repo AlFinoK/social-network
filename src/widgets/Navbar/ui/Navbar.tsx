@@ -2,9 +2,9 @@
 import { classNames } from 'shared/lib/classNames'
 import { useTranslation } from 'react-i18next'
 import Logo from 'shared/assets/icons/logo.svg'
-import { Modal } from 'shared/ui/Modal'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Button, ButtonTheme } from 'shared/ui/Button/Button'
+import { LoginModal } from 'features/AuthByUsername/ui/LoginModal/LoginModal'
 import s from './Navbar.module.scss'
 
 interface NavbarProps {
@@ -30,13 +30,15 @@ export const Navbar = ({ className }: NavbarProps) => {
                 <Button
                     className={s.loginBtn}
                     theme={ButtonTheme.OUTLINE}
-                    // eslint-disable-next-line react/jsx-closing-bracket-location
-                    onClick={onToggleModal}>
+                    onClick={onToggleModal}
+                >
                     {t('Зарегистрироваться')}
                 </Button>
-                <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-                    <span>lorem ipsum dolor...</span>
-                </Modal>
+                <LoginModal
+                    className={s.modal}
+                    isOpen={isAuthModal}
+                    onClose={onToggleModal}
+                />
             </div>
         </div>
     )

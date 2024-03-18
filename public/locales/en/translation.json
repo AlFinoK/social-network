@@ -6,5 +6,7 @@
     "Произошла ошибка": "An error occurred",
     "Перезагрузить страницу": "Reload the page",
     "Зарегистрироваться": "Sign up",
-    "Войти": "Sign in"
+    "Войти": "Sign in",
+    "логин": "login",
+    "пароль": "password"
 }
