@@ -5,6 +5,8 @@ import Logo from 'shared/assets/icons/logo.svg'
 import { useEffect, useState } from 'react'
 import { Button, ButtonTheme } from 'shared/ui/Button/Button'
 import { LoginModal } from 'features/AuthByUsername/ui/LoginModal/LoginModal'
+import { Link } from 'react-router-dom'
+import { RoutePath, routeConfig } from 'shared/config/routeConfig'
 import s from './Navbar.module.scss'
 
 interface NavbarProps {
@@ -21,11 +23,10 @@ export const Navbar = ({ className }: NavbarProps) => {
 
     return (
         <div className={classNames(s.navbar, {}, [className])}>
-            <div className={s.logo}>
+            <Link to={RoutePath.main} className={s.logo}>
                 <Logo />
-                <span>{t('social')}</span>
-            </div>
-
+                <span>social</span>
+            </Link>
             <div className={s.login}>
                 <Button
                     className={s.loginBtn}

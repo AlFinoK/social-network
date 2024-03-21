@@ -7,6 +7,10 @@
     --font-line-l: 32px;
     --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
+    // colors
+    --error-color: rgb(166 23 23);
+    --success-color: rgb(0 222 0);
+
     // sizes
     --navbar-height: 10vh;
 }

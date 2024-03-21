@@ -12,6 +12,10 @@
     background: none;
 }
 
+.disabled {
+    opacity: 0.5;
+}
+
 .outline {
     border: 1px solid var(--primary-color);
     color: var(--primary-color);
