@@ -25,7 +25,7 @@ interface InputProps extends HTMLInputProps {
     type?: string
     placeholder: string
     value?: string
-    autoFocus?: boolean
+    autofocus?: boolean
     onChange?: (value: string) => void
 }
 
@@ -36,26 +36,30 @@ export const Input = memo((props: InputProps) => {
         type = 'text',
         placeholder,
         theme,
-        autoFocus,
+        value,
+        autofocus,
         ...otherProps
     } = props
 
-    const [inputValue, setInputValue] = useState('')
     const inputRef = useRef<HTMLInputElement>(null)
 
-    const handleClearInput = () => {
-        if (inputValue.length > 0) {
-            setInputValue('')
+    const handleClearInput = (e: any) => {
+        if (value.length > 0) {
             inputRef.current?.focus()
+            onChange?.((e.target.value = ''))
         }
     }
-    // ^ очистка и фокус при клике на иконку
+    // ^ очистка и фокус при клике на кнопку очистки
+
+    const onChangeInput = (e: any) => {
+        onChange?.(e.target.value)
+    }
 
     useEffect(() => {
-        if (autoFocus) {
+        if (autofocus) {
             inputRef.current?.focus()
         }
-    }, [autoFocus])
+    }, [autofocus])
     // ^ установка фокуса при каждом изменении
 
     return (
@@ -65,8 +69,8 @@ export const Input = memo((props: InputProps) => {
                 className={classNames(s.Input, { [s[theme]]: true })}
                 type={type}
                 placeholder={placeholder}
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
+                value={value}
+                onChange={onChangeInput}
                 {...otherProps}
             />
             <div onClick={handleClearInput} className={s.clear}>

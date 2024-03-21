@@ -1,10 +1,11 @@
 {
-    "Перевод": "Translate",
+    "Войти": "Sign in",
     "Главная": "Main",
-    "О сайте": "About",
-    "Страница не найдена": "Page wasn't found",
-    "Произошла ошибка": "An error occurred",
-    "Перезагрузить страницу": "Reload the page",
     "Зарегистрироваться": "Sign up",
-    "Войти": "Sign in"
+    "О сайте": "About",
+    "Перевод": "Translate",
+    "Перезагрузить страницу": "Reload the page",
+    "Произошла ошибка": "An error occurred",
+    "Страница не найдена": "Page wasn't found",
+    "пароль": ""
 }

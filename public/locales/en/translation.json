@@ -1,12 +1,17 @@
 {
-    "Перевод": "Translate",
-    "Главная": "Main",
-    "О сайте": "About",
-    "Страница не найдена": "Page wasn't found",
-    "Произошла ошибка": "An error occurred",
-    "Перезагрузить страницу": "Reload the page",
-    "Зарегистрироваться": "Sign up",
-    "Войти": "Sign in",
-    "логин": "login",
-    "пароль": "password"
+  "Перевод": "Translate",
+  "Главная": "Main",
+  "О сайте": "About",
+  "Страница не найдена": "Page wasn't found",
+  "Произошла ошибка": "An error occurred",
+  "Перезагрузить страницу": "Reload the page",
+  "Зарегистрироваться": "Sign up",
+  "Войти": "Sign in",
+  "login": "login",
+  "password": "password",
+  "continue": "continue",
+  "Has error": "Has error",
+  "Auth": "Auth",
+  "Invalid login or password": "Invalid login or password",
+  "Data wasnt gave": "Data wasnt gave"
 }
