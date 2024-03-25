@@ -38,5 +38,10 @@
             "module": "CommonJS"
         }
     },
-    "include": ["./config/jest/setupTest.ts", "./src/**/*.ts", "./src/**/*.tsx", "src/features/AuthByUsername/ui/LoginForm/eventLoop.оs"]
+    "include": [
+        "./config/jest/setupTest.ts",
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "src/features/AuthByUsername/ui/LoginForm/eventLoop.оs"
+    ]
 }
