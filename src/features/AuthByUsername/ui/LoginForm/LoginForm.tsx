@@ -41,7 +41,9 @@ export const LoginForm = memo(({ className }: LoginFormProps) => {
         <div className={classNames(s.LoginForm, {}, [className])}>
             <div className={s.inner}>
                 <Text theme={TextTheme.PRIMARY} title={t('Auth')} />
-                {error && <Text theme={TextTheme.ERROR} title={t('Has error')} descr={error} />}
+                {error && (
+                    <Text theme={TextTheme.ERROR} title={t('Has error')} descr={t('Invalid login or password')} />
+                )}
                 <Input
                     autofocus
                     theme={InputTheme.PRIMARY}

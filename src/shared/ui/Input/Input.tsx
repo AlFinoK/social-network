@@ -1,11 +1,4 @@
-import {
-    memo,
-    InputHTMLAttributes,
-    ChangeEvent,
-    useState,
-    useEffect,
-    useRef,
-} from 'react'
+import { memo, InputHTMLAttributes, ChangeEvent, useState, useEffect, useRef } from 'react'
 
 import { classNames } from 'shared/lib/classNames'
 import s from './Input.module.scss'
@@ -14,10 +7,7 @@ export enum InputTheme {
     PRIMARY = 'primary',
 }
 
-type HTMLInputProps = Omit<
-    InputHTMLAttributes<HTMLInputElement>,
-    'value' | 'onChange'
->
+type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onChange'>
 
 interface InputProps extends HTMLInputProps {
     className?: string
@@ -30,16 +20,7 @@ interface InputProps extends HTMLInputProps {
 }
 
 export const Input = memo((props: InputProps) => {
-    const {
-        className,
-        onChange,
-        type = 'text',
-        placeholder,
-        theme,
-        value,
-        autofocus,
-        ...otherProps
-    } = props
+    const { className, onChange, type = 'text', placeholder, theme, value, autofocus, ...otherProps } = props
 
     const inputRef = useRef<HTMLInputElement>(null)
 
@@ -60,7 +41,6 @@ export const Input = memo((props: InputProps) => {
             inputRef.current?.focus()
         }
     }, [autofocus])
-    // ^ установка фокуса при каждом изменении
 
     return (
         <div className={s.inputBox}>
