@@ -8,9 +8,5 @@ interface UserProps {
 
 export const User = ({ className }: UserProps) => {
     const { t } = useTranslation()
-    return (
-        <div className={classNames(s.User, {}, [className])}>
-            {/* Your component content goes here */}
-        </div>
-    )
+    return <div className={classNames(s.User, {}, [className])}>User</div>
 }
